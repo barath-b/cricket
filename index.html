@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cricket</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg ">
+            <div class="toss cont">
+                <h1 class="pink">Cricket</h1>
+                <h2 class="blue">Toss Time</h2>
+                <h4 class="blue">Call your luck</h4>
+                <div class="flex">
+                    <div id="head" class="tossbutton">
+                        <p>Head</p>
+                    </div>
+                    <div id="tail" class="tossbutton">
+                        <p>Tails</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tosswon cont hidden">
+                <h1 class="pink">Cricket</h1>
+                <h3 class="blue">You have won the toss</h3>
+                <h3 class="blue decision"></h3>
+                <div class="flex">
+                    <div id="bat" class="bat batbowl">
+                        <p>Bat</p>
+                    </div>
+                    <div id="bowl" class="bowl batbowl">
+                        <p>Bowl</p>
+                    </div>
+                </div>
+                <div id="letsplaywon" class="letsplay hidden">
+                    <p>Lets Play</p>
+                </div>
+            </div>
+            <div class="tosslost cont hidden">
+                <h1 class="pink">Cricket</h1>
+                <h3 class="blue">Australia have the toss</h3>
+                <h3 class="blue">and decided to <span class="choice"></span> first</h3>
+                <div id="letsplaylost" class="letsplay">
+                    <p>Lets Play</p>
+                </div>
+            </div>
+            <div class="match hidden">
+                <div class="flex">
+                    <div class="small">
+                        <div class="image">
+                            <img src="images/Flag_of_India.svg" alt="Aus">
+                        </div>
+                    </div>
+                    <div class="center">
+                        <div class="flex">
+                            <div class="bats">
+                                <div class="batsman">
+                                    <div class="flex update">
+                                        <div class="strike"></div>
+                                        <p class="name bold">H Pandya</p>
+                                        <p class="run bold ">20</p>
+                                        <span class="balls light">20</span>
+                                    </div>
+                                    <div class="flex update">
+                                        <div class="strike"></div>
+                                        <p class="name bold">H Pandya</p>
+                                        <p class="run bold">20</p>
+                                        <span class="balls light">20</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main">
+                                <div class="rel">
+                                    <div class="over">
+                                        <p class="overs bold update">23.5</p>
+                                    </div>
+                                    <div class="pp">
+                                        <p class="ppp bold update">P1</p>
+                                    </div>
+                                    <div class="scorearea">
+                                        <div class="flex">
+                                            <p class="bowlteam light update">NZ</p>
+                                            <p class="vs light">v</p>
+                                            <p class="batteam bold update">IND</p>
+                                            <p class="score bold update">123-5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mainbottom">
+                                    <p class="infoone">Current run rate: <span class="crr update">6.66</span></p>
+                                    <p class="info hidden update">need <span class="runs bold">18</span> runs from <span
+                                            class="oversleft bold">23.5</span> <span
+                                            class="oversrballs light">overs</span></p>
+                                </div>
+                            </div>
+                            <div class="ball">
+                                <div class="bowler">
+                                    <div class="flex update">
+                                        <p class="name bold">M Strac</p>
+                                        <p class="run figure bold">20-1</p>
+                                        <p class="balls overs light">2.5</p>
+                                    </div>
+                                    <div class="projected">
+                                        <p class="pscore update">Projected : 300</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small right">
+                        <div class="image">
+                            <img src="images/Flag_of_Australia.svg" alt="Aus">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="flex">
+
+                    </div>
+                </div>
+            </div>
+            <div class="msg cont hidden">
+                <h1 class="pink">Cricket</h1>
+                <div class="nextball">
+                    <h3 class="blue"><span class="tossupdate pink">Australia</span>
+                        have won the toss and decided to <span class="tossupdate pink">Bowl</span> first
+                    </h3>
+                    <h2 class="blue">Last Ball:</h2>
+                    <p class="pink update lastball">1</p>
+                    <h3 class="blue">Click to bowl next ball</h3>
+                    <div class="bowlbtn">
+                        <input id="bowlBtn" type="button" value="Bowl">
+                    </div>
+                </div>
+                <div class="inover hidden">
+                    <h3><span class="pink inningsup">IND</span> : <span class="blue inningsup">123/4</span></h3>
+                    <h2 class="blue"><span class="inningsup pink">AUS</span> need <span
+                            class="pink inningsup">124</span> runs to
+                        win.</h2>
+                    <div id="nextInn" class="letsplay">
+                        <p>Next Innings</p>
+                    </div>
+                </div>
+                <div class="ended hidden">
+                    <h3 class="blue"><span class="result pink"></span> : <span class="result pink"></span></h3>
+                    <h3 class="blue"><span class="result pink"></span> : <span class="result pink"></span></h3>
+                    <h2 class="blue result"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
